@@ -10,7 +10,6 @@ from utilities.BaseClass import BaseClass
 
 
 
-@pytest.mark.smoke
 class Test_ButtonClicks(BaseClass):
 
     # Open Button Links page
