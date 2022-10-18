@@ -1,5 +1,8 @@
 import time
 import pytest
+from selenium.webdriver import ActionChains
+from selenium.webdriver.common.by import By
+
 from pageObjects.HomePage import HomePage
 from utilities.BaseClass import BaseClass
 
@@ -31,6 +34,7 @@ class Test_ButtonClicks(BaseClass):
 
         time.sleep(1)
         buttonClicksPage.moveAndClickThirdButton()
+        time.sleep(2)
         assert "Well done!" in buttonClicksPage.getPopupTitleText(), "You didn't open third popup"
         buttonClicksPage.closePopup()
 
