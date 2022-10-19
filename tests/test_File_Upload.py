@@ -12,7 +12,7 @@ class Test_FileUpload(BaseClass):
         # imagePath = "/Users/soprano/Desktop/PetProject/files/icon.png"
 
         # Git repo path
-        imagePath = "files/icon.png"
+        imagePath = "PetProject/files/icon.png"
         fileUploadPage.uploadFile(imagePath)
         fileUploadPage.Submit()
         alerText = "Your file has now been uploaded!"
