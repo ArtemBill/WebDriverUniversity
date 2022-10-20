@@ -1,5 +1,9 @@
+import time
+
 from pageObjects.HomePage import HomePage
 from utilities.BaseClass import BaseClass
+
+
 
 class Test_FileUpload(BaseClass):
 
@@ -11,10 +15,11 @@ class Test_FileUpload(BaseClass):
         # Local path
         # imagePath = "/Users/soprano/Desktop/PetProject/files/icon.png"
 
-        # Git repo path
-        imagePath = "PetProject/files/icon.png"
+        # Remote path
+        imagePath = "/PetProject/files/icon.png"
         fileUploadPage.uploadFile(imagePath)
         fileUploadPage.Submit()
+        time.sleep(4)
         alerText = "Your file has now been uploaded!"
         self.checkAlertText(alerText)
 
