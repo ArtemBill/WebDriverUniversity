@@ -16,7 +16,7 @@ class Test_FileUpload(BaseClass):
         # imagePath = "/Users/soprano/Desktop/PetProject/files/icon.png"
 
         # Git repo path
-        imagePath = "/PetProject/files/icon.png"
+        imagePath = "img"
         fileUploadPage.uploadFile(imagePath)
         fileUploadPage.Submit()
         time.sleep(4)
