@@ -13,10 +13,10 @@ class Test_FileUpload(BaseClass):
         fileUploadPage = homePage.openFileUploadPage()
 
         # Local path
-        # imagePath = "/Users/soprano/Desktop/PetProject/files/icon.png"
+        imagePath = "/Users/soprano/Desktop/PetProject/files/icon.png"
 
         # Git repo path
-        imagePath = "files/icon.png"
+        # imagePath = "/Petpfiles/icon.png"
         fileUploadPage.uploadFile(imagePath)
         fileUploadPage.Submit()
         time.sleep(4)
