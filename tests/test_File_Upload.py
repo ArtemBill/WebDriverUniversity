@@ -16,6 +16,7 @@ class Test_FileUpload(BaseClass):
         # imagePath = "/Users/soprano/Desktop/PetProject/files/icon.png"
 
         # Remote path
+        # This code don't work now
         imagePath = "/PetProject/files/icon.png"
         fileUploadPage.uploadFile(imagePath)
         fileUploadPage.Submit()

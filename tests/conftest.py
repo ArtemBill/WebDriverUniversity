@@ -19,7 +19,7 @@ def setup(request):
 
     driver = webdriver.Chrome(options=options)
 
-    # This code we need for local tedting
+    # This code we need for local testing
     # s = Service("/Users/soprano/Desktop/First_Module/pythonSelenium/chromedriver")
     # driver = webdriver.Chrome(service=s)
     driver.implicitly_wait(10)
