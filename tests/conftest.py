@@ -22,7 +22,6 @@ def setup(request):
     # This code we need for local testing
     # s = Service("/Users/soprano/Desktop/First_Module/pythonSelenium/chromedriver")
     # driver = webdriver.Chrome(service=s)
-
     driver.implicitly_wait(10)
     driver.get("http://webdriveruniversity.com/index.html")
     driver.maximize_window()
