@@ -13,14 +13,10 @@ class Test_FileUpload(BaseClass):
         fileUploadPage = homePage.openFileUploadPage()
 
         # Local path
-        # imagePath = "/Users/soprano/Desktop/PetProject/files/icon.png"
+        imagePath = "/Users/soprano/Desktop/PetProject/files/icon.png"
 
-        # Remote path
-        # This code don't work now
-        imagePath = "/PetProject/files/icon.png"
         fileUploadPage.uploadFile(imagePath)
         fileUploadPage.Submit()
-        time.sleep(4)
         alerText = "Your file has now been uploaded!"
         self.checkAlertText(alerText)
 
