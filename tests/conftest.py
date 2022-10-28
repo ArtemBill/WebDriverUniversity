@@ -7,15 +7,16 @@ from selenium.webdriver.chrome.options import Options
 
 @pytest.fixture(scope="class")
 def setup(request):
+    # This code for running on remote machine
     options = Options()
     options.add_argument("--headless")
     options.add_argument("start-maximized")
-
     driver = webdriver.Chrome(options=options)
 
-    # This code we need for local testing
+    # This code for local testing
     # s = Service("/Users/soprano/Desktop/First_Module/pythonSelenium/chromedriver")
     # driver = webdriver.Chrome(service=s)
+
     driver.implicitly_wait(10)
     driver.get("http://webdriveruniversity.com/index.html")
     driver.maximize_window()
