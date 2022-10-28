@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 
 @pytest.fixture(scope="class")
 def setup(request):
-    # This code for running on remote machine
+    # This code for running on remote machine.
     options = Options()
     options.add_argument("--headless")
     options.add_argument("start-maximized")
